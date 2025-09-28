@@ -1,3 +1,8 @@
+---
+layout: default
+title: FAQ по проектам
+---
+
 [Перейти на сайт](https://ru.hexlet.io)
 
 # FAQ по проектам

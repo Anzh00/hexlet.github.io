@@ -1,3 +1,8 @@
+---
+layout: default
+title: Что такое Mattermost
+---
+
 [Перейти на сайт](https://ru.hexlet.io)
 
 # Что такое Mattermost

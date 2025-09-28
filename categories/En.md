@@ -1,3 +1,8 @@
+---
+layout: default
+title: En
+---
+
 [Перейти на сайт](https://ru.hexlet.io)
 
 # En

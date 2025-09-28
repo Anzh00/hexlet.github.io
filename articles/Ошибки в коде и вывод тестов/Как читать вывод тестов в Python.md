@@ -1,3 +1,8 @@
+---
+layout: default
+title: Как читать вывод тестов в Python
+---
+
 [Перейти на сайт](https://ru.hexlet.io)
 
 # Как читать вывод тестов в Python
