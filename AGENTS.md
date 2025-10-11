@@ -15,4 +15,7 @@ Follow the existing 2-space indentation in TypeScript, JSX, and Markdown files. 
 There is no bespoke test suite; treat `npm run build` as the primary regression gate. Always run `npm run typecheck` when touching TypeScript, and verify modified pages locally via `npm run start`. For content changes, proofread in the browser and validate that sidebar entries render correctly.
 
 ## Commit & Pull Request Guidelines
+
 Write imperative, concise commit messages (`Add partner spotlight page`) as seen in the Git history. Group related changes into a single commit whenever practical. Pull requests should summarize the change, reference related issues, and include screenshots or GIFs for UI-impacting updates. Note any manual verification steps so reviewers can reproduce your checks.
+
+Do not write custom css styles

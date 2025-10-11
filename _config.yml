@@ -1,9 +1,0 @@
-title: Хекслет.Поддержка
-description: Как работает Хекслет и связанные с этим вопросы
-baseurl: ""
-url: "https://hexlet.github.io"
-theme: minima
-markdown: kramdown
-encoding: utf-8
-sass:
-  quiet_deps: true
