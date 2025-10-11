@@ -89,6 +89,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          href: 'https://github.com/Hexlet/hexlet.github.io/discussions',
+          label: 'Предложить улучшение',
+          position: 'left',
+        },
+        {
           href: 'https://ru.hexlet.io',
           label: 'Платформа',
           position: 'right',
@@ -141,8 +146,8 @@ const config: Config = {
               href: 'https://help.hexlet.io',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/hexlet',
+              href: 'https://t.me/hexlet_help_bot',
+              label: 'Поддержка в ТГ',
             },
           ],
         },
