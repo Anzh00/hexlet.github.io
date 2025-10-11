@@ -9,6 +9,10 @@ const config: Config = {
   tagline: 'Ответы на частые вопросы и инструкции для студентов',
   favicon: 'img/favicon.ico',
 
+  plugins: [
+    "@orama/plugin-docusaurus-v3",
+  ],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -100,11 +104,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Разделы',
+          title: 'Решения',
           items: [
             {
-              label: 'Документация',
-              to: '/',
+              label: 'Компаниям',
+              to: 'https://b2b.hexlet.io/',
+            },
+            {
+              label: 'Хекслет Карьера',
+              to: 'https://career.hexlet.io/',
             },
           ],
         },
@@ -112,12 +120,12 @@ const config: Config = {
           title: 'Сообщество',
           items: [
             {
-              label: 'Основной сайт',
-              href: 'https://ru.hexlet.io',
+              label: 'VK',
+              href: 'https://vk.com/hexlet',
             },
             {
-              label: 'Гайды Hexlet Guides',
-              href: 'https://guides.hexlet.io',
+              label: 'Телеграм-канал',
+              href: 'https://t.me/hexlet_ru',
             },
             {
               label: 'YouTube-канал',
