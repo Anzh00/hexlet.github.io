@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Справочный центр Хекслета',
+  tagline: 'Ответы на частые вопросы и инструкции для студентов',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -41,10 +41,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebar.ts',
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hexlet/hexlet.github.io',
+            'https://github.com/hexlet/hexlet.github.io/blob/main',
         },
         blog: false,
         theme: {
@@ -61,20 +62,35 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Хекслет',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Логотип Хекслета',
+        src: 'img/hexlet-logo-white-rus.png',
       },
       items: [
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Документация',
+        // },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          href: 'https://t.me/hexletcommunity',
+          label: 'Сообщество',
           position: 'left',
-          label: 'Tutorial',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://t.me/hexlet_help_bot',
+          label: 'Написать (ТГ)',
+          position: 'left',
+        },
+        {
+          href: 'https://ru.hexlet.io',
+          label: 'Платформа',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/hexlet/hexlet.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -84,42 +100,46 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Разделы',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Документация',
+              to: '/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Сообщество',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Основной сайт',
+              href: 'https://ru.hexlet.io',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Гайды Hexlet Guides',
+              href: 'https://guides.hexlet.io',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'YouTube-канал',
+              href: 'https://www.youtube.com/@HexletUniversity',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Поддержка',
           items: [
+            {
+              label: 'Центр поддержки',
+              href: 'https://help.hexlet.io',
+            },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/hexlet',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Хекслет.`,
     },
     prism: {
       theme: prismThemes.github,
