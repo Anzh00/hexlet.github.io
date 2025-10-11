@@ -1,13 +1,13 @@
 install:
-	bundle install
+	npm install
 
 start:
-	bundle exec jekyll serve --livereload
+	npm run start
 
 build:
-	bundle exec jekyll build
+	npm run build
 
-clean:
-	bundle exec jekyll clean
-
-clean-build: clean build
+# clean:
+# 	bundle exec jekyll clean
+#
+# clean-build: clean build
