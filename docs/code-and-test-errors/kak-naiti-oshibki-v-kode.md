@@ -8,6 +8,8 @@ title: "Как найти ошибки в коде"
 
 Начните с просмотра видео, чтобы познакомиться с принципами эффективной отладки и избежать распространенных ошибок.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9iwYRcw3A8A?si=r4fXTROfXPzZmJ62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Также загляните в наш Твиттер. В одном треде мы разобрали несколько примеров, когда вроде бы рабочий код не проходит тесты в Хекслете. Сам тред можно найти [здесь](https://twitter.com/hexlethq/status/1545686617561628673?s=46&t=LbgDoYiyYsD-qadPmF522A).
 
 *Примеры в этой статье написаны на языке JavaScript, но принципы одинаковы для любого языка.*
@@ -54,4 +56,4 @@ title: "Как найти ошибки в коде"
 
 Также ошибки содержат вывод backtrace, по которому можно найти то место, в котором возникла ошибка и попробовать его проанализировать.
 
-Многие из этих ошибок легко исправить с помощью отладочной печати (см. урок [Отладочная печать](https://ru.hexlet.io/courses/programming-basics/lessons/debug/theory_unit)).
+Многие из этих ошибок легко исправить с помощью [отладочной печати](https://ru.hexlet.io/courses/python-basics/lessons/debug/theory_unit).
