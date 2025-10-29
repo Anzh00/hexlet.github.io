@@ -6,7 +6,7 @@ title: "Создать аккаунт компании"
 
 # Создать аккаунт компании
 
-B2B
+> B2B
 
 Для создания аккаунта компании на Хекслете нужно заполнить форму на [странице](https://ru.hexlet.io/teams/new).
 
@@ -26,7 +26,7 @@ B2B
 
 Когда все поля заполнены, остается только cохранить данные, и аккаунт будет создан. Теперь можно:
 
-1. [Оплатить обучение](https://help.hexlet.io/ru/articles/111765-oplatit-obuchenie)
-2. [Пригласить сотрудников](https://help.hexlet.io/ru/articles/111750-priglasit-sotrudnikov)
-3. [Распределить доступы](https://help.hexlet.io/ru/articles/111770-raspredelit-dostupy)
-4. [Следить за прогрессом](https://help.hexlet.io/ru/articles/111755-sledit-za-progressom)
+1. [Оплатить обучение](/docs/corporate-access/oplatit-obuchenie.md)
+2. [Пригласить сотрудников](/docs/corporate-access/priglasit-sotrudnikov.md)
+3. [Распределить доступы](/docs/corporate-access/raspredelit-dostupy.md)
+4. [Следить за прогрессом](/docs/corporate-access/sledit-za-progressom.md)
