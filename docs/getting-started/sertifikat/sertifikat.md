@@ -6,11 +6,11 @@ title: "Сертификат"
 
 # Сертификат
 
-Здесь можно ознакомиться с условиями получения сертификата и его примером :)
+> Здесь можно ознакомиться с условиями получения сертификата и его примером :)
 
 ## Условия получения
 
-- Вы обучаетесь на тарифе «[Оптимальный](https://help.hexlet.io/article/20504)» ,«[Премиальный](https://help.hexlet.io/article/20505)», «[Групповой](https://help.hexlet.io/article/22606)» или «[Стандартный](https://help.hexlet.io/article/20461)»
+- Вы обучаетесь на тарифе «[Оптимальный](/docs/learning-formats/tarif-optimalnyi.md)» ,«[Премиальный](/docs/learning-formats/tarif-premialnyi.md)», «[Групповой](/docs/learning-formats/tarif-gruppovoi-prodvinutyi.md)» или «[Стандартный](/docs/learning-formats/tarif-standartnyi.md)»
 - Вы завершили обучение по программе: прошли 80% уроков и все проекты в ней
 - Все проекты проверил и принял наставник
 
