@@ -10,7 +10,30 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   plugins: [
-    "@orama/plugin-docusaurus-v3",
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        indexDocSidebarParentCategories: 2,
+        includeParentCategoriesInPageTitle: false,
+        indexBlog: false,
+        indexPages: false,
+        language: ["ru", "en"],
+        style: undefined,
+        maxSearchResults: 10,
+
+        // lunr.js-specific settings
+        lunr: {
+          tokenizerSeparator: /[\s\-.,!?:;()]+/, // чуть более "мягкое" разделение слов
+          b: 0.6, // лёгкое снижение нормализации по длине, чтобы длинные статьи не терялись
+          k1: 1.2, // чуток усиливаем вклад совпадений редких терминов
+          titleBoost: 6, // совпадения в заголовках по-прежнему самые важные
+          contentBoost: 1.8, // усиливаем вклад основного текста статьи
+          tagsBoost: 3, // снижаем вклад тегов, чтобы они не перегружали выдачу
+          parentCategoriesBoost: 1.5, // навигационные категории влияют мягче
+        }
+      }
+    ],
   ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
