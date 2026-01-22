@@ -12,9 +12,9 @@ slug: /
 Если вы только начинаете учиться или хотите разобраться в возможностях платформы, начните отсюда — ответы на большинство вопросов уже есть в наших статьях.
 
 ## Популярные статьи:
-- [Как устроены курсы в Хекслете](https://help.hexlet.io/getting-started/kak-ustroeny-kursy-v-hekslete)
-- [Про сертификат](https://help.hexlet.io/getting-started/sertifikat/)
-- [Как сохранить свое решение](https://help.hexlet.io/practice/kak-sohranit-svoe-reshenie)
-- [Как оставить отзыв о Хекслете?](https://help.hexlet.io/site-and-platform/kak-ostavit-otzyv-o-hekslete)
-- [О проекте Хекслет.Карьера](https://help.hexlet.io/career/hekslet-karera)
-- [Академический отпуск](https://help.hexlet.io/learning-process/akademicheskii-otpusk)
+- [Как устроены курсы в Хекслете](/docs/getting-started/kak-ustroeny-kursy-v-hekslete.md)
+- [Про сертификат](/docs/getting-started/sertifikat/sertifikat.md)
+- [Как сохранить свое решение](/docs/practice/kak-sohranit-svoe-reshenie.md)
+- [Делитесь отзывами и получайте бонусы](/docs/site-and-platform/bonusy-za-otzyvy/delites_otzyvami_i_poluchayte_bonusy.md)
+- [О проекте Хекслет.Карьера](/docs/career/hekslet-karera.md)
+- [Академический отпуск](/docs/learning-process/akademicheskii-otpusk.md)
