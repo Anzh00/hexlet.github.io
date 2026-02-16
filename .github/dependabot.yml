@@ -11,6 +11,7 @@ updates:
         update-types: [minor, patch]
       actions-major:
         update-types: [major]
+  # Dependabot uses the "npm" ecosystem for both npm and pnpm JavaScript projects.
   - package-ecosystem: npm
     directory: /
     schedule:
@@ -19,9 +20,9 @@ updates:
       - dependency-type: development
     labels: [dependencies, automated, dev]
     groups:
-      npm-dev-minor-patch:
+      js-dev-minor-patch:
         update-types: [minor, patch]
-      npm-dev-major:
+      js-dev-major:
         update-types: [major]
   - package-ecosystem: npm
     directory: /
@@ -31,5 +32,5 @@ updates:
       - dependency-type: production
     labels: [dependencies, automated, prod]
     groups:
-      npm-prod-minor-patch:
+      js-prod-minor-patch:
         update-types: [minor, patch]
