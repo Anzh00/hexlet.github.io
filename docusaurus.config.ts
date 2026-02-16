@@ -9,6 +9,13 @@ const config: Config = {
   tagline: 'Ответы на частые вопросы и инструкции для студентов',
   favicon: 'img/favicon.ico',
 
+  themeConfig: {
+    // Declare some <meta> tags
+    metadata: [
+      { name: 'algolia-site-verification', content: '093713AA286F7B7D' },
+    ],
+  },
+
   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
