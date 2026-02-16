@@ -65,7 +65,7 @@ const config: Config = {
       appId: '31S4GA91US',
       apiKey: 'fb627b1a0c425541c758c75bfd47e15c',
       indexName: 'hexlet_help_pages',
-      contextualSearch: true,
+      contextualSearch: false,
     },
     // Declare some <meta> tags
     metadata: [
