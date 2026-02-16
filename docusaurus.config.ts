@@ -42,7 +42,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://hexlet.github.io',
+  url: 'https://help.hexlet.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -75,6 +75,10 @@ const config: Config = {
             'https://github.com/hexlet/hexlet.github.io/blob/main',
         },
         blog: false,
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
         theme: {
           // customCss: './src/css/custom.css',
         },
