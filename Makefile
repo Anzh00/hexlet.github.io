@@ -1,15 +1,17 @@
 install:
-	npm ci
+	pnpm install --frozen-lockfile
 
 start:
-	npm run start
+	pnpm start
 
 build:
-	npm run build
+	pnpm build
+
+typecheck:
+	pnpm typecheck
 
 update-deps:
-	npx ncu -u
-	npm i
+	pnpm run update-deps
 
 # clean:
 # 	bundle exec jekyll clean
