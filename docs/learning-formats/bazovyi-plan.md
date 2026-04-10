@@ -33,13 +33,13 @@ title: "Базовый план"
 
 ## Оформление
 
-Посмотреть цену и подключить «Базовый план» можно здесь: https://ru.hexlet.io/subscription
+Посмотреть цену и подключить «Базовый план» можно здесь — https://ru.hexlet.io/subscription
 
 Либо на странице любого навыка — https://ru.hexlet.io/courses_subscription
 
-Оформить месячный план с иностранной карты можно по этим ссылкам:
-- В долларах https://hexlet.io/subscription?nickname=professional_monthly_49
-- В тенге https://kz.hexlet.io/subscription?nickname=professional_monthly_21900_kzt
+Оформить подписку с карты иностранного банка можно здесь — https://hexlet.io/subscription
+
+А с карты, выпущенной в Казахстане, можно также оплатить в тенге — https://kz.hexlet.io/subscription?nickname=professional_monthly_21900_kzt
 
 Для оплаты достаточно привязать банковскую карту, платёж будет списываться автоматически раз в месяц, в год или в 3 года в зависимости от выбранной подписки. Отменить списания можно в любой момент в разделе «[Оплата](https://ru.hexlet.io/account/subscription)», доступ останется до конца оплаченного периода.
 
