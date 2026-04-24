@@ -24,6 +24,8 @@ title: "Делитесь отзывами и получайте бонусы"
 
 ## Площадки для размещения отзывов
 
+- [Отзовик](https://otzovik.com/reviews/hexlet_io-onlayn_shkola_programmirovaniya/)
+
 - [OtzyvMarketing](https://otzyvmarketing.ru/hexlet/)
 
 - [Academy Market](https://academy-market.com/school-reviews/hekslet)
