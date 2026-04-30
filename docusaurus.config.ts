@@ -36,9 +36,16 @@ const config: Config = {
     ],
   ],
 
+  storage: {
+    type: 'localStorage',
+    namespace: true,
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    faster: true,
+    experimental_vcs: true,
+    v4: true,
   },
 
   // Set the production url of your site here
