@@ -12,7 +12,7 @@ updates:
       actions-major:
         update-types: [major]
   # Dependabot uses the "npm" ecosystem for both npm and pnpm JavaScript projects.
-  - package-ecosystem: npm
+  - package-ecosystem: pnpm
     directory: /
     schedule:
       interval: weekly
@@ -24,7 +24,7 @@ updates:
         update-types: [minor, patch]
       js-dev-major:
         update-types: [major]
-  - package-ecosystem: npm
+  - package-ecosystem: pnpm
     directory: /
     schedule:
       interval: weekly
