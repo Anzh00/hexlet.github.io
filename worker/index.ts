@@ -54,9 +54,12 @@ app.use(
   }),
 );
 
-app.get('/', async (c) => c.json(await getServer().getStatus()));
-
-app.post('/', async (c) => getServer().handleWebRequest(c.req.raw));
+// The Cloudflare route is `help.hexlet.io/mcp*`, so the Worker receives
+// requests with pathname `/mcp` (or `/mcp/...`). Match all paths under
+// the mount point so we don't depend on a trailing slash.
+const mcp = app.basePath('/mcp');
+mcp.get('/', async (c) => c.json(await getServer().getStatus()));
+mcp.post('/', async (c) => getServer().handleWebRequest(c.req.raw));
 
 app.onError((err, c) => {
   console.error('MCP Server Error:', err);
