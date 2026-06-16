@@ -6,6 +6,6 @@
     "ignoreDeprecations": "6.0",
     "allowImportingTsExtensions": true
   },
-  "exclude": [".docusaurus", "build"]
+  "exclude": [".docusaurus", "build", "worker"]
 }
 
