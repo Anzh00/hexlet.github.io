@@ -8,6 +8,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // Absolute file:// URL works with the plugin's dynamic import() loader,
 // which resolves relative paths against its own dist directory.
+//
+// Once https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/78 lands,
+// drop `mcp-providers/` and replace with `flexsearch: { tokenize: 'strict',
+// context: false, ... }` directly in plugin options below.
 const leanIndexerSpecifier = pathToFileURL(
   path.join(__dirname, 'mcp-providers/lean-indexer.ts'),
 ).href;
@@ -19,6 +23,9 @@ const leanIndexerSpecifier = pathToFileURL(
 // plugin postBuild hooks via Promise.all, so a separate shim plugin would
 // race the MCP plugin. We wrap the MCP plugin instead and run the shim
 // sequentially inside the same postBuild.
+//
+// Remove `shimHtmlForMcp` and `wrappedMcpPlugin` once this lands upstream:
+// https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/77
 async function shimHtmlForMcp(outDir: string) {
   const skip = new Set(['assets', 'img', 'static', 'mcp']);
   async function walk(dir: string) {

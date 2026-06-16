@@ -1,3 +1,11 @@
+// The whole `mcp-providers/` directory exists because
+// docusaurus-plugin-mcp-server hardcodes a FlexSearch config that's tuned
+// for English (forward tokenize + bidirectional context) and produces an
+// 80+ MB index on Russian content.
+//
+// Drop this directory once the upstream PR lands and the released version
+// exposes a `flexsearch` option:
+// https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/78
 import FlexSearch from 'flexsearch';
 import type { ProcessedDoc, SearchResult } from 'docusaurus-plugin-mcp-server';
 

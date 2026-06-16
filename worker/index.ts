@@ -12,6 +12,10 @@ const BASE_URL = 'https://help.hexlet.io';
 // McpDocsServer.searchProvider is normally resolved via loadSearchProvider(),
 // which uses dynamic import() — won't work in a Worker bundle. We monkey-patch
 // the prototype to inject our pre-imported LeanFlexSearchProvider instead.
+//
+// Replace this whole block with `search: new LeanFlexSearchProvider()` in the
+// McpDocsServer config once this PR is released:
+// https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/78
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (McpDocsServer.prototype as any)._doInitialize = async function () {
   const provider = new LeanFlexSearchProvider();
