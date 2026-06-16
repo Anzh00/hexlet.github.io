@@ -18,4 +18,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+npm-cache
 
+# Cloudflare Worker
+.wrangler
+worker/.dev.vars

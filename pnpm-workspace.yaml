@@ -1,3 +1,11 @@
+allowBuilds:
+  '@swc/core': true
+  core-js: true
+  esbuild: true
+  sharp: false
+  workerd: true
 onlyBuiltDependencies:
   - core-js
   - core-js-pure
+overrides:
+  zod: ^3.25.76

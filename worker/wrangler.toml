@@ -1,0 +1,8 @@
+name = "hexlet-help-mcp"
+main = "index.ts"
+compatibility_date = "2026-06-16"
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern = "help.hexlet.io/mcp*"
+zone_name = "hexlet.io"

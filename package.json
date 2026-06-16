@@ -17,22 +17,26 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^2.0.1",
-    "@docusaurus/core": "3.10.0",
-    "@docusaurus/faster": "3.10.0",
-    "@docusaurus/preset-classic": "3.10.0",
+    "@docusaurus/core": "3.10.1",
+    "@docusaurus/faster": "3.10.1",
+    "@docusaurus/preset-classic": "3.10.1",
     "@mdx-js/react": "^3.1.1",
     "@orama/plugin-docusaurus-v3": "^3.1.18",
     "clsx": "^2.1.1",
+    "docusaurus-plugin-mcp-server": "^0.12.0",
+    "flexsearch": "0.7.43",
+    "hono": "^4.12.25",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.10.0",
-    "@docusaurus/tsconfig": "3.10.0",
-    "@docusaurus/types": "3.10.0",
-    "npm-check-updates": "^22.0.1",
-    "typescript": "~6.0.3"
+    "@docusaurus/module-type-aliases": "3.10.1",
+    "@docusaurus/tsconfig": "3.10.1",
+    "@docusaurus/types": "3.10.1",
+    "npm-check-updates": "^22.2.3",
+    "typescript": "~6.0.3",
+    "wrangler": "^4.100.0"
   },
   "browserslist": {
     "production": [
@@ -47,7 +51,7 @@
     ]
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=25.0"
   },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@11.7.0"
 }

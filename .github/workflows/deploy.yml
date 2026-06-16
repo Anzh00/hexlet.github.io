@@ -34,8 +34,38 @@ jobs:
         with:
           path: build
 
-      - name: Deploy MCP worker
+      - name: Upload MCP artifacts for worker
         if: ${{ github.event_name == 'push' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcp-build
+          path: build/mcp
+          retention-days: 1
+
+  deploy-worker:
+    name: Deploy MCP worker
+    needs: build
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    # Don't block the Pages deploy if the worker step has trouble.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 25
+          cache: pnpm
+      - name: Install dependencies
+        run: make install
+      - name: Restore MCP artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: mcp-build
+          path: build/mcp
+      - name: Deploy worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
