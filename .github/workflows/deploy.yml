@@ -21,18 +21,27 @@ jobs:
           run_install: false
       - uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 25
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: make install
       - name: Build website
-        run: pnpm run build
+        run: make build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: build
+
+      - name: Deploy MCP worker
+        if: ${{ github.event_name == 'push' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          packageManager: pnpm
 
   deploy:
     name: Deploy to GitHub Pages

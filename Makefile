@@ -4,7 +4,7 @@ install:
 start:
 	pnpm start
 
-build:
+build: typecheck
 	pnpm build
 
 typecheck:
