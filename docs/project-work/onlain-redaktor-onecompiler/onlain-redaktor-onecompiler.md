@@ -18,7 +18,7 @@ title: "Онлайн-редактор OneCompiler"
 - **Для любых экспериментов с кодом.** Захотелось проверить идею, разобрать пример из урока или быстро прогнать небольшой скрипт — открыли редактор и сразу запустили, без настройки окружения.
 
 :::caution
-OneCompiler — это «черновик» для запуска кода. Это не замена полноценной среды разработки: сложные проекты с зависимостями и тестами здесь не поднять. Для проекта основная среда — GitHub Codespaces (см. [Как работать в GitHub Codespaces](https://help.hexlet.io/project-work/kak-rabotat-v-github-codespaces)).
+OneCompiler — это «черновик» для запуска кода. Это не замена полноценной среды разработки: сложные проекты с зависимостями и тестами здесь не поднять. Для проекта основная среда — GitHub Codespaces (см. [Как работать в GitHub Codespaces](/docs/project-work/kak-rabotat-v-github-codespaces/kak-rabotat-v-github-codespaces.md)).
 :::
 
 ## Выбираем язык
@@ -116,6 +116,8 @@ public class Main {
 ![Результат SQL-запроса в OneCompiler](/img/docs/img-193--onecompiler-result.png)
 
 {/* ANNOTATION: подсветить кнопку «Run» и итоговую таблицу результата в панели Output. */}
+
+Как наполнить базу данных и выполнять запросы по шагам — подробно разобрано в статье [Как практиковаться в выполнении SQL запросов](/docs/practice-guides/kak-praktikovatsya-v-vypolnenii-sql-zaprosov/kak-praktikovatsya-v-vypolnenii-sql-zaprosov.md).
 
 ## Загружаем решение на GitHub
 

@@ -54,3 +54,7 @@ title: "Как практиковаться в выполнении SQL запр
 Например, если мы выполним запрос выше, то получим такую таблицу:
 
 ![](/img/docs/img-130.png)
+
+:::tip
+Кроме DB Fiddle, выполнять SQL-запросы в браузере можно в **OneCompiler** — там сразу доступна готовая база PostgreSQL, а создание таблицы, наполнение данными и запросы пишутся в одном окне. Подробнее: [Онлайн-редактор OneCompiler](/docs/project-work/onlain-redaktor-onecompiler/onlain-redaktor-onecompiler.md).
+:::
