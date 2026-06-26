@@ -36,7 +36,7 @@ OneCompiler — это «черновик» для запуска кода. Эт
 
 ![Выбор языка на главной странице OneCompiler](/img/docs/img-195--onecompiler-languages.png)
 
-<!-- ANNOTATION: можно подсветить пару плиток языков (например, Python и Java) и поле поиска сверху. -->
+{/* ANNOTATION: можно подсветить пару плиток языков (например, Python и Java) и поле поиска сверху. */}
 
 ## Запускаем код
 
@@ -56,7 +56,7 @@ for i in range(1, 4):
 
 ![Запуск кода на Python в OneCompiler](/img/docs/img-196--onecompiler-python-run.png)
 
-<!-- ANNOTATION: подсветить кнопку «Run» и область вывода (Console) справа. -->
+{/* ANNOTATION: подсветить кнопку «Run» и область вывода (Console) справа. */}
 
 Тот же пример на других языках выглядит так.
 
@@ -115,7 +115,7 @@ public class Main {
 
 ![Результат SQL-запроса в OneCompiler](/img/docs/img-193--onecompiler-result.png)
 
-<!-- ANNOTATION: подсветить кнопку «Run» и итоговую таблицу результата в панели Output. -->
+{/* ANNOTATION: подсветить кнопку «Run» и итоговую таблицу результата в панели Output. */}
 
 ## Загружаем решение на GitHub
 
@@ -139,6 +139,6 @@ public class Main {
 
 ![Окно «Save your code» с выбором видимости](/img/docs/img-197--onecompiler-share.png)
 
-<!-- ANNOTATION: подсветить переключатель «Who can see this?» (Public / Unlisted / Private) и кнопку Save. -->
+{/* ANNOTATION: подсветить переключатель «Who can see this?» (Public / Unlisted / Private) и кнопку Save. */}
 
 После сохранения адрес страницы станет постоянной ссылкой на ваш код — её можно скопировать из адресной строки браузера и отправить.
