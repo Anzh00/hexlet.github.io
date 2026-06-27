@@ -34,3 +34,31 @@ pnpm run build
 pnpm run typecheck
 pnpm run clear
 ```
+
+## Подключение MCP к ИИ-агентам
+
+Сайт отдаёт MCP-сервер (Model Context Protocol), через который ИИ-агенты могут искать и читать документацию Hexlet. Эндпоинт:
+
+```
+https://help.hexlet.io/mcp
+```
+
+**Claude Code:**
+
+```bash
+claude mcp add --transport http hexlet-help https://help.hexlet.io/mcp
+```
+
+**Cursor / VS Code:**
+
+```json
+{
+  "mcpServers": {
+    "hexlet-help": {
+      "url": "https://help.hexlet.io/mcp"
+    }
+  }
+}
+```
+
+После подключения агент сможет искать по документации и получать содержимое страниц через инструменты MCP-сервера.
