@@ -4,6 +4,10 @@ allowBuilds:
   esbuild: true
   sharp: false
   workerd: true
+minimumReleaseAgeExclude:
+  - hono@4.12.26
+  - docusaurus-plugin-mcp-server@1.0.0
+  - npm-check-updates@22.2.8
 onlyBuiltDependencies:
   - core-js
   - core-js-pure
