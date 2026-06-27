@@ -3,34 +3,11 @@ import { cors } from 'hono/cors';
 import { McpDocsServer } from 'docusaurus-plugin-mcp-server';
 import docs from '../build/mcp/docs.json';
 import searchIndex from '../build/mcp/search-index.json';
-import LeanFlexSearchProvider from '../mcp-providers/lean-provider.ts';
+import flexsearchConfig from '../flexsearch.config.ts';
 
 const NAME = 'hexlet-help';
 const VERSION = '1.0.0';
 const BASE_URL = 'https://help.hexlet.io';
-
-// McpDocsServer.searchProvider is normally resolved via loadSearchProvider(),
-// which uses dynamic import() — won't work in a Worker bundle. We monkey-patch
-// the prototype to inject our pre-imported LeanFlexSearchProvider instead.
-//
-// Replace this whole block with `search: new LeanFlexSearchProvider()` in the
-// McpDocsServer config once this PR is released:
-// https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/78
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-(McpDocsServer.prototype as any)._doInitialize = async function () {
-  const provider = new LeanFlexSearchProvider();
-  await provider.initialize(
-    {
-      baseUrl: this.config.baseUrl ?? '',
-      serverName: this.config.name,
-      serverVersion: this.config.version ?? '1.0.0',
-      outputDir: '',
-    },
-    { docs: this.config.docs, indexData: this.config.searchIndexData },
-  );
-  this.searchProvider = provider;
-  this.initialized = true;
-};
 
 let server: McpDocsServer | null = null;
 const getServer = (): McpDocsServer =>
@@ -40,6 +17,10 @@ const getServer = (): McpDocsServer =>
     name: NAME,
     version: VERSION,
     baseUrl: BASE_URL,
+    // The built-in 'flexsearch' provider is bundled statically (no dynamic
+    // import), so it works in the Worker. This config must match the one used
+    // at build time in docusaurus.config.ts, or the index deserializes wrong.
+    flexsearch: flexsearchConfig,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } as any));
 

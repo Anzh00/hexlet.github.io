@@ -1,75 +1,9 @@
-import path from 'path';
-import { promises as fs } from 'fs';
-import { pathToFileURL } from 'url';
 import { themes as prismThemes } from 'prism-react-renderer';
-import mcpServerPlugin from 'docusaurus-plugin-mcp-server';
-import type { Config, Plugin, LoadContext } from '@docusaurus/types';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
-// Absolute file:// URL works with the plugin's dynamic import() loader,
-// which resolves relative paths against its own dist directory.
-//
-// Once https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/78 lands,
-// drop `mcp-providers/` and replace with `flexsearch: { tokenize: 'strict',
-// context: false, ... }` directly in plugin options below.
-const leanIndexerSpecifier = pathToFileURL(
-  path.join(__dirname, 'mcp-providers/lean-indexer.ts'),
-).href;
+import flexsearchConfig from './flexsearch.config';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-// trailingSlash: false → Docusaurus emits pages as `path.html`, but
-// docusaurus-plugin-mcp-server only scans `index.html`. Docusaurus runs all
-// plugin postBuild hooks via Promise.all, so a separate shim plugin would
-// race the MCP plugin. We wrap the MCP plugin instead and run the shim
-// sequentially inside the same postBuild.
-//
-// Remove `shimHtmlForMcp` and `wrappedMcpPlugin` once this lands upstream:
-// https://github.com/scalvert/docusaurus-plugin-mcp-server/pull/77
-async function shimHtmlForMcp(outDir: string) {
-  const skip = new Set(['assets', 'img', 'static', 'mcp']);
-  async function walk(dir: string) {
-    const entries = await fs.readdir(dir, { withFileTypes: true });
-    for (const entry of entries) {
-      if (entry.isDirectory()) {
-        if (skip.has(entry.name)) continue;
-        await walk(path.join(dir, entry.name));
-      } else if (
-        entry.isFile() &&
-        entry.name.endsWith('.html') &&
-        entry.name !== 'index.html' &&
-        entry.name !== '404.html'
-      ) {
-        const base = entry.name.slice(0, -'.html'.length);
-        const targetDir = path.join(dir, base);
-        const targetFile = path.join(targetDir, 'index.html');
-        try {
-          await fs.access(targetFile);
-          continue;
-        } catch {}
-        await fs.mkdir(targetDir, { recursive: true });
-        await fs.copyFile(path.join(dir, entry.name), targetFile);
-      }
-    }
-  }
-  await walk(outDir);
-}
-
-async function wrappedMcpPlugin(ctx: LoadContext, opts: unknown): Promise<Plugin> {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const inner = await (mcpServerPlugin as any)(ctx, opts);
-  const originalPostBuild = inner.postBuild;
-  return {
-    ...inner,
-    name: inner.name ?? 'docusaurus-plugin-mcp-server',
-    async postBuild(args: { outDir: string; [k: string]: unknown }) {
-      await shimHtmlForMcp(args.outDir);
-      if (originalPostBuild) {
-        await originalPostBuild.call(inner, args);
-      }
-    },
-  };
-}
 
 const config: Config = {
   title: 'Справочный центр Хекслета',
@@ -78,13 +12,13 @@ const config: Config = {
 
   plugins: [
     [
-      wrappedMcpPlugin,
+      require.resolve('docusaurus-plugin-mcp-server'),
       {
         server: {
           name: 'hexlet-help',
           version: '1.0.0',
         },
-        indexers: [leanIndexerSpecifier],
+        flexsearch: flexsearchConfig,
       },
     ],
     [
