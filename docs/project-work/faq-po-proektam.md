@@ -12,7 +12,7 @@ title: "FAQ по проектам"
 
 ## Что делать, если возникли трудности во время выполнения проекта?
 
-Если учитесь самостоятельно, можно задать вопрос [в нашем Cообществе в Telegram](/docs/community-and-media/telegram-soobshchestvo-heksleta.md) в канале по нужному языку программирования. Если же вам хотелось бы получить ревью проекта от опытного практикующего разработчика, обратите внимание на обучение с наставником на тарифах [Оптимальный](/docs/learning-formats/tarif-optimalnyi.md) или [Премиальный](/docs/learning-formats/tarif-premialnyi.md).
+Если учитесь самостоятельно, можно задать вопрос [в нашем Cообществе в Telegram](/docs/community-and-media/telegram-soobshchestvo-heksleta.md) в канале по нужному языку программирования. Если же вам хотелось бы получить ревью проекта от опытного практикующего разработчика, обратите внимание на обучение с наставником на тарифах [Расширенный](/docs/formats-and-tarifs/tarifs/tarif-rasshirennyi.md), [Стандартный](/docs/formats-and-tarifs/tarifs/tarif-standartnyi.md), [Оптимальный](/docs/formats-and-tarifs/tarifs/tarif-optimalnyi.md) или [Премиальный](/docs/formats-and-tarifs/tarifs/tarif-premialnyi.md).
 
 Если учитесь с наставником, задавайте вопросы ему через [форму](/docs/site-and-platform/formatirovanie-soobshchenii-dlya-nastavnika.md), которая есть на каждом шаге проекта.
 
@@ -32,7 +32,7 @@ title: "FAQ по проектам"
 
 ## Можно ли пройти проект самостоятельно без проверки наставником?
 
-Да. Проекты с автоматической проверкой тестами можно пройти на [Базовом плане](/docs/learning-formats/bazovyi-plan.md).
+Да. Проекты с автоматической проверкой тестами можно пройти на [Базовом плане](/docs/formats-and-tarifs/tarifs/bazovyi-plan.md).
 
 ## Проекты платные?
 
