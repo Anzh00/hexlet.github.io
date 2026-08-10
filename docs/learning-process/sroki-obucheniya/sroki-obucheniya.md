@@ -51,7 +51,7 @@ title: "Сроки обучения"
 
 Чтобы правильно сформулировать проблему, с которой вы столкнулись, прочитайте статью [Как правильно задавать вопросы](/docs/learning-support/kak-pravilno-zadavat-voprosy.md).
 
-Если вы учитесь без поддержки наставника, но чувствуете потребность в помощи, рассмотрите вариант перехода на тариф [Оптимальный](/docs/learning-formats/tarif-optimalnyi.md) или [Премиальный](/docs/learning-formats/tarif-premialnyi.md).
+Если вы учитесь без поддержки наставника, но чувствуете потребность в помощи, рассмотрите вариант перехода на тариф [Расширенный](/docs/formats-and-tarifs/tarifs/tarif-rasshirennyi.md), [Стандартный](/docs/formats-and-tarifs/tarifs/tarif-standartnyi.md), [Оптимальный](/docs/formats-and-tarifs/tarifs/tarif-optimalnyi.md) или [Премиальный](/docs/formats-and-tarifs/tarifs/tarif-premialnyi.md).
 
 # Подсказки на сайте
 
