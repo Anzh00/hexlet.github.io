@@ -45,6 +45,17 @@ const config: Config = {
         }
       }
     ],
+    [
+      require.resolve('@docusaurus/plugin-client-redirects'),
+      {
+        redirects: [
+          {
+            from: '/learning-formats/bazovyi-plan',
+            to: '/formats-and-tarifs/tarifs/bazovyi-plan',
+          },
+        ],
+      },
+    ],
   ],
 
   storage: {
